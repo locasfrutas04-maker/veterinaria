@@ -1,0 +1,1408 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Veterinaria El Campo | Salud y Sanidad Pecuaria</title>
+    <meta name="description" content="Veterinaria El Campo: servicios veterinarios especializados en animales de granja, ganadería, bioseguridad y medicina pecuaria en Santa Cruz de Yojoa, Cortés, Honduras.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* ============================================================
+           PALETA PREMIUM — Esmeralda + Champán + Marfil
+           ============================================================ */
+        :root {
+            --emerald-900: #0a2e21;
+            --emerald-800: #0f3d2e;
+            --emerald-700: #1a5c44;
+            --emerald-600: #237a58;
+            --emerald-500: #2e9d70;
+            --emerald-400: #4bc08d;
+            --emerald-300: #8fe0b6;
+            --emerald-100: #d9f3e5;
+
+            --gold-600: #a37a3f;
+            --gold-500: #c9a15c;
+            --gold-400: #dcb877;
+            --gold-300: #ecd29a;
+            --gold-100: #f8ecd0;
+
+            --ivory: #faf7f0;
+            --ivory-warm: #f5efe2;
+            --charcoal: #1f2a26;
+            --slate: #4d5d56;
+            --muted: #7a8a83;
+
+            --gradient-hero: linear-gradient(135deg, #0a2e21 0%, #143d2c 45%, #1a5c44 100%);
+            --gradient-gold: linear-gradient(135deg, #dcb877 0%, #c9a15c 50%, #a37a3f 100%);
+            --gradient-emerald: linear-gradient(135deg, #0f3d2e 0%, #237a58 55%, #4bc08d 100%);
+            --gradient-card: linear-gradient(145deg, #ffffff 0%, #faf7f0 100%);
+
+            --shadow-soft: 0 8px 30px rgba(10,46,33,.06);
+            --shadow-md: 0 15px 40px rgba(10,46,33,.10);
+            --shadow-lg: 0 25px 60px rgba(10,46,33,.18);
+            --shadow-gold: 0 10px 30px rgba(201,161,92,.35);
+
+            --font-heading: 'Cormorant Garamond', serif;
+            --font-body: 'Outfit', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+
+        body {
+            font-family: var(--font-body) !important;
+            color: var(--slate);
+            background: var(--ivory);
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading) !important;
+            color: var(--emerald-900);
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        p, a, li, button, input, textarea { font-family: var(--font-body); }
+        a { transition: color .3s ease; text-decoration: none; }
+        img { max-width: 100%; }
+
+        /* ============================================================
+           LOADER PREMIUM
+           ============================================================ */
+        #loader {
+            position: fixed; inset: 0;
+            background: var(--gradient-hero);
+            z-index: 99999;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            transition: opacity .8s ease, visibility .8s ease;
+        }
+        #loader.hidden { opacity: 0; visibility: hidden; }
+        .loader-ring {
+            width: 80px; height: 80px;
+            border: 3px solid rgba(220,184,119,.15);
+            border-top-color: var(--gold-400);
+            border-right-color: var(--gold-400);
+            border-radius: 50%;
+            animation: spin 1.1s cubic-bezier(.6,.2,.4,.8) infinite;
+        }
+        .loader-text {
+            color: var(--gold-300);
+            font-family: var(--font-heading);
+            font-size: 22px;
+            letter-spacing: 4px;
+            margin-top: 25px;
+            text-transform: uppercase;
+            animation: fadeText 2s ease-in-out infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @keyframes fadeText { 0%,100% { opacity: .4; } 50% { opacity: 1; } }
+
+        /* ============================================================
+           BARRA DE PROGRESO
+           ============================================================ */
+        #scroll-progress {
+            position: fixed;
+            top: 0; left: 0;
+            height: 3px; width: 0%;
+            background: var(--gradient-gold);
+            z-index: 9999;
+            transition: width .1s ease-out;
+            box-shadow: 0 0 12px rgba(220,184,119,.7);
+        }
+
+        /* ============================================================
+           HEADER
+           ============================================================ */
+        .header-top_area {
+            background: var(--emerald-900) !important;
+            border-bottom: 1px solid rgba(220,184,119,.2);
+        }
+        .header-top_area .short_contact_list ul li a,
+        .header-top_area .social_media_links a {
+            color: var(--gold-300) !important;
+            font-size: 13px;
+        }
+        .header-top_area .social_media_links a:hover {
+            color: var(--gold-400) !important;
+            transform: translateY(-2px);
+        }
+
+        .main-header-area {
+            background: rgba(250,247,240,.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: all .4s ease;
+            border-bottom: 1px solid rgba(10,46,33,.06);
+        }
+        .main-header-area.scrolled {
+            box-shadow: var(--shadow-md);
+            padding: 4px 0;
+            background: rgba(250,247,240,.98);
+        }
+
+        #navigation li a {
+            transition: color .3s ease;
+            font-weight: 500;
+            color: var(--emerald-900) !important;
+            position: relative;
+            font-size: 14px;
+            letter-spacing: .3px;
+            text-transform: uppercase;
+        }
+        #navigation li a::after {
+            content: '';
+            position: absolute;
+            left: 50%; bottom: -6px;
+            width: 0; height: 2px;
+            background: var(--gradient-gold);
+            transition: all .35s cubic-bezier(.6,.2,.4,.8);
+            transform: translateX(-50%);
+        }
+        #navigation li a:hover::after { width: 100%; }
+        #navigation li a:hover { color: var(--emerald-600) !important; }
+
+        /* ============================================================
+           BOTONES PREMIUM
+           ============================================================ */
+        .boxed-btn4, .boxed-btn3 {
+            display: inline-block;
+            background: var(--gradient-gold) !important;
+            background-size: 200% auto !important;
+            border: none !important;
+            color: var(--emerald-900) !important;
+            font-family: var(--font-body) !important;
+            font-weight: 600 !important;
+            border-radius: 50px !important;
+            padding: 15px 34px !important;
+            transition: all .5s cubic-bezier(.165,.84,.44,1) !important;
+            box-shadow: var(--shadow-gold) !important;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: .6px;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+        .boxed-btn4::before, .boxed-btn3::before {
+            content: '';
+            position: absolute;
+            top: 50%; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,.5), transparent);
+            transition: left .7s ease;
+            transform: translateY(-50%);
+        }
+        .boxed-btn4:hover::before, .boxed-btn3:hover::before { left: 120%; }
+        .boxed-btn4:hover, .boxed-btn3:hover {
+            background-position: right center !important;
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(201,161,92,.5) !important;
+        }
+
+        /* ============================================================
+           HERO
+           ============================================================ */
+        .slider_area .single_slider {
+            position: relative;
+            isolation: isolate;
+            min-height: 720px;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            background-attachment: fixed;
+        }
+        .slider_area .single_slider::before {
+            content: "";
+            position: absolute; inset: 0; z-index: -1;
+            background: linear-gradient(120deg, rgba(10,46,33,.92), rgba(26,92,68,.75), rgba(10,46,33,.55));
+        }
+        .slider_area .single_slider::after {
+            content: "";
+            position: absolute; inset: 0; z-index: -1;
+            background:
+                radial-gradient(circle at 15% 30%, rgba(220,184,119,.22), transparent 45%),
+                radial-gradient(circle at 85% 70%, rgba(75,192,141,.18), transparent 45%);
+            animation: bgShift 14s ease-in-out infinite alternate;
+        }
+        @keyframes bgShift {
+            0% { transform: scale(1); opacity: .8; }
+            100% { transform: scale(1.15); opacity: 1; }
+        }
+
+        .slider_text { position: relative; z-index: 2; padding: 80px 0; }
+        .slider_text h1 {
+            font-size: clamp(38px, 5.5vw, 62px) !important;
+            line-height: 1.15 !important;
+            margin-bottom: 26px;
+            color: #fff !important;
+            font-weight: 600;
+            text-shadow: 0 4px 30px rgba(0,0,0,.3);
+        }
+        .slider_text h1 span {
+            font-style: italic;
+            background: linear-gradient(90deg, #ecd29a, #dcb877, #ecd29a);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shine 4s linear infinite;
+            font-weight: 700;
+        }
+        @keyframes shine { to { background-position: 200% center; } }
+        .slider_text p {
+            max-width: 620px;
+            line-height: 1.9;
+            margin-bottom: 34px;
+            color: rgba(255,255,255,.9) !important;
+            font-size: 17px;
+        }
+
+        /* Línea decorativa del hero */
+        .hero-divider {
+            width: 70px; height: 2px;
+            background: var(--gradient-gold);
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .hero-divider::before {
+            content: '';
+            position: absolute;
+            left: -15px; top: -3px;
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: var(--gold-400);
+            box-shadow: 0 0 12px var(--gold-400);
+        }
+
+        /* ============================================================
+           SECCIONES BASE
+           ============================================================ */
+        .ambient_section { position: relative; isolation: isolate; }
+        .ambient_section::before {
+            content: "";
+            position: absolute;
+            width: 380px; height: 380px;
+            border-radius: 50%;
+            top: 5%; left: -190px;
+            background: radial-gradient(circle, rgba(75,192,141,.10), transparent 70%);
+            filter: blur(30px);
+            z-index: -1;
+            pointer-events: none;
+            animation: floatSlow 12s ease-in-out infinite;
+        }
+        @keyframes floatSlow {
+            0%,100% { transform: translate(0,0) scale(1); }
+            50% { transform: translate(40px,-30px) scale(1.1); }
+        }
+
+        /* Títulos de sección */
+        .section_title h2 {
+            font-size: clamp(30px, 4vw, 46px);
+            color: var(--emerald-900);
+            margin-bottom: 18px;
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+        }
+        .section_title h2::after {
+            content: '';
+            display: block;
+            width: 60px; height: 3px;
+            background: var(--gradient-gold);
+            margin: 20px auto 0;
+            border-radius: 3px;
+        }
+        .section_title p {
+            color: var(--muted);
+            font-size: 16px;
+            line-height: 1.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* ============================================================
+           TARJETAS DE SERVICIOS — PREMIUM
+           ============================================================ */
+        .service_area { padding: 100px 0; background: var(--ivory); }
+
+        .single_service {
+            background: var(--gradient-card);
+            border-radius: 24px;
+            padding: 0;
+            border: 1px solid rgba(10,46,33,.06);
+            transition: all .55s cubic-bezier(.165,.84,.44,1);
+            box-shadow: var(--shadow-soft);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .single_service::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 4px;
+            background: var(--gradient-gold);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform .55s ease;
+            z-index: 3;
+        }
+        .single_service::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            padding: 1px;
+            background: linear-gradient(135deg, transparent, rgba(220,184,119,.5), transparent);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity .5s ease;
+            pointer-events: none;
+        }
+        .single_service:hover {
+            transform: translateY(-14px);
+            box-shadow: var(--shadow-lg);
+        }
+        .single_service:hover::before { transform: scaleX(1); }
+        .single_service:hover::after { opacity: 1; }
+
+        .service_thumb {
+            overflow: hidden;
+            border-radius: 24px 24px 0 0;
+            position: relative;
+        }
+        .img-cover-farm {
+            display: block;
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            transition: transform .8s cubic-bezier(.165,.84,.44,1);
+        }
+        .single_service:hover .img-cover-farm { transform: scale(1.12); }
+
+        .service_thumb::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(10,46,33,.5), transparent 60%);
+            opacity: 0;
+            transition: opacity .5s ease;
+        }
+        .single_service:hover .service_thumb::after { opacity: 1; }
+
+        .service_content {
+            padding: 30px 26px 34px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .service_content h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--emerald-900);
+            transition: color .3s ease;
+        }
+        .single_service:hover .service_content h3 { color: var(--emerald-600); }
+        .service_content p {
+            font-size: 14.5px;
+            line-height: 1.85;
+            color: var(--slate);
+            margin: 0;
+        }
+
+        /* ============================================================
+           ANIMALES — PREMIUM
+           ============================================================ */
+        .farm_animals_section {
+            background: linear-gradient(180deg, var(--ivory) 0%, var(--ivory-warm) 100%);
+            padding: 100px 0;
+            position: relative;
+            isolation: isolate;
+        }
+
+        .animal_card {
+            background: #fff;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(10,46,33,.06);
+            box-shadow: var(--shadow-soft);
+            transition: all .55s cubic-bezier(.165,.84,.44,1);
+            margin-bottom: 30px;
+            height: calc(100% - 30px);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .animal_card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            padding: 2px;
+            background: var(--gradient-gold);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity .5s ease;
+            pointer-events: none;
+            z-index: 4;
+        }
+        .animal_card:hover {
+            transform: translateY(-12px) scale(1.01);
+            box-shadow: 0 30px 70px rgba(10,46,33,.20);
+        }
+        .animal_card:hover::before { opacity: 1; }
+
+        .animal_img_wrapper {
+            position: relative;
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+        }
+        .animal_img_wrapper img {
+            display: block;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: transform .9s cubic-bezier(.165,.84,.44,1);
+        }
+        .animal_card:hover .animal_img_wrapper img { transform: scale(1.15); }
+
+        .animal_img_wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(10,46,33,.65), transparent 55%);
+            opacity: .7;
+            transition: opacity .5s ease;
+        }
+        .animal_card:hover .animal_img_wrapper::after { opacity: .9; }
+
+        .animal_badge {
+            position: absolute;
+            top: 18px; right: 15px;
+            background: var(--gradient-gold);
+            color: var(--emerald-900);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            padding: 8px 14px;
+            border-radius: 30px;
+            text-transform: uppercase;
+            z-index: 3;
+            box-shadow: 0 6px 20px rgba(0,0,0,.25);
+        }
+
+        .animal_content {
+            padding: 28px 26px 26px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+        }
+        .animal_content h3 {
+            color: var(--emerald-900);
+            font-size: 23px;
+            margin-bottom: 14px;
+            font-weight: 700;
+            transition: color .3s ease;
+        }
+        .animal_card:hover .animal_content h3 { color: var(--emerald-600); }
+        .animal_content p {
+            font-size: 14px;
+            line-height: 1.85;
+            color: var(--slate);
+            margin-bottom: 22px;
+        }
+        .animal_meta {
+            margin-top: auto;
+            padding-top: 18px;
+            border-top: 1px solid rgba(10,46,33,.08);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: var(--emerald-700);
+            font-weight: 600;
+            letter-spacing: .3px;
+        }
+        .animal_meta span {
+            display: inline-flex;
+            align-items: center;
+            transition: transform .3s ease;
+        }
+        .animal_meta i {
+            margin-right: 6px;
+            color: var(--gold-500);
+            font-size: 13px;
+            transition: transform .4s ease, color .4s ease;
+        }
+        .animal_card:hover .animal_meta i {
+            transform: scale(1.35) rotate(-10deg);
+            color: var(--emerald-500);
+        }
+
+        /* ============================================================
+           NOSOTROS
+           ============================================================ */
+        .pet_care_area {
+            padding: 100px 0;
+            background: var(--ivory);
+        }
+        .pet_thumb {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        .pet_thumb::before {
+            content: '';
+            position: absolute;
+            top: -20px; left: -20px;
+            width: 100px; height: 100px;
+            border-top: 3px solid var(--gold-400);
+            border-left: 3px solid var(--gold-400);
+            border-radius: 24px 0 0 0;
+            z-index: 2;
+        }
+        .pet_thumb::after {
+            content: '';
+            position: absolute;
+            bottom: -20px; right: -20px;
+            width: 100px; height: 100px;
+            border-bottom: 3px solid var(--gold-400);
+            border-right: 3px solid var(--gold-400);
+            border-radius: 0 0 24px 0;
+            z-index: 2;
+        }
+        .pet_info .section_title h2::after { margin: 20px 0 0; }
+
+        /* ============================================================
+           ESTADÍSTICAS
+           ============================================================ */
+        .adapt_area {
+            position: relative;
+            overflow: hidden;
+            background: var(--gradient-emerald) !important;
+            color: #fff;
+            padding: 100px 0;
+        }
+        .adapt_area::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 20% 80%, rgba(220,184,119,.15), transparent 45%),
+                radial-gradient(circle at 80% 20%, rgba(143,224,182,.18), transparent 45%);
+            animation: bgShift 14s ease-in-out infinite alternate;
+        }
+        .adapt_area .section_title h2,
+        .adapt_area .section_title p { color: #fff; position: relative; }
+        .adapt_area .section_title h2::after { background: var(--gradient-gold); }
+
+        .single_adapt {
+            background: rgba(255,255,255,.07);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(220,184,119,.22);
+            border-radius: 20px;
+            padding: 32px 22px;
+            margin-bottom: 22px;
+            transition: all .5s cubic-bezier(.165,.84,.44,1);
+            position: relative;
+            overflow: hidden;
+        }
+        .single_adapt::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(220,184,119,.35), transparent 30%);
+            animation: rotateGlow 6s linear infinite;
+            opacity: 0;
+            transition: opacity .5s ease;
+        }
+        .single_adapt:hover::before { opacity: 1; }
+        .single_adapt:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold-400);
+            background: rgba(255,255,255,.12);
+            box-shadow: 0 20px 50px rgba(0,0,0,.25);
+        }
+        .single_adapt > * { position: relative; z-index: 2; }
+        @keyframes rotateGlow { to { transform: rotate(360deg); } }
+
+        .single_adapt h3 {
+            color: var(--gold-300) !important;
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+        .single_adapt h3 i { transition: transform .5s ease; }
+        .single_adapt:hover h3 i { transform: scale(1.15) rotate(8deg); }
+        .single_adapt p { color: #fff; font-size: 14px; margin: 0; }
+
+        .counter-num {
+            font-size: 52px;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            display: block;
+            line-height: 1;
+            background: linear-gradient(90deg, #ecd29a, #dcb877, #ecd29a);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shine 4s linear infinite;
+            margin-bottom: 8px;
+        }
+        .counter-label {
+            color: #fff;
+            font-size: 12px;
+            margin-top: 8px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        /* ============================================================
+           EQUIPO
+           ============================================================ */
+        .team_area { padding: 100px 0; background: var(--ivory-warm); }
+        .single_team {
+            background: #fff;
+            border-radius: 24px;
+            padding: 20px;
+            box-shadow: var(--shadow-soft);
+            transition: all .55s cubic-bezier(.165,.84,.44,1);
+            border: 1px solid rgba(10,46,33,.06);
+            position: relative;
+            overflow: hidden;
+        }
+        .single_team::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 4px;
+            background: var(--gradient-gold);
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform .55s ease;
+            z-index: 3;
+        }
+        .single_team:hover::before { transform: scaleX(1); }
+        .single_team:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .team_thumb_img {
+            display: block;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            object-position: center 25%;
+            border-radius: 18px;
+            background: var(--ivory);
+            transition: transform .7s ease;
+        }
+        .single_team:hover .team_thumb_img { transform: scale(1.04); }
+
+        .member_name {
+            padding: 22px 10px 10px;
+        }
+        .member_name h3 {
+            font-size: 26px;
+            color: var(--emerald-900);
+            margin-bottom: 6px;
+        }
+        .member_name p {
+            color: var(--gold-600);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* ============================================================
+           FOOTER
+           ============================================================ */
+        .footer {
+            background: linear-gradient(135deg, #06231a 0%, #0a2e21 60%, #0f3d2e 100%) !important;
+            border-top: 3px solid transparent;
+            border-image: var(--gradient-gold) 1;
+            position: relative;
+            overflow: hidden;
+        }
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 100%;
+            background:
+                radial-gradient(circle at 10% 20%, rgba(220,184,119,.08), transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(75,192,141,.08), transparent 40%);
+            pointer-events: none;
+        }
+        .footer .footer_title {
+            color: var(--gold-300) !important;
+            font-size: 20px;
+            margin-bottom: 22px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        .footer .footer_title::after {
+            content: '';
+            position: absolute;
+            left: 0; bottom: 0;
+            width: 40px; height: 2px;
+            background: var(--gradient-gold);
+            border-radius: 2px;
+        }
+        .footer p, .footer li, .footer .address_line li, .footer .links li a {
+            color: rgba(255,255,255,.75);
+            font-size: 14px;
+            line-height: 1.9;
+        }
+        .footer a { transition: all .3s ease; display: inline-block; }
+        .footer a:hover {
+            color: var(--gold-400) !important;
+            transform: translateX(4px);
+        }
+        .footer .address_line a { color: rgba(255,255,255,.85) !important; }
+        .footer .address_line li i,
+        .footer .links li a::before {
+            color: var(--gold-400);
+        }
+        .footer .links li a { position: relative; padding-left: 18px; }
+        .footer .links li a::before {
+            content: '\f105';
+            font-family: FontAwesome;
+            position: absolute;
+            left: 0;
+            transition: transform .3s ease;
+        }
+        .footer .links li a:hover::before { transform: translateX(3px); }
+
+        .copy-right_text {
+            background: rgba(0,0,0,.3);
+            padding: 22px 0;
+            border-top: 1px solid rgba(220,184,119,.12);
+        }
+        .copy_right {
+            color: rgba(255,255,255,.6) !important;
+            font-size: 13px;
+            margin: 0;
+            letter-spacing: .5px;
+        }
+
+        /* ============================================================
+           BOTONES FLOTANTES
+           ============================================================ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px; right: 25px;
+            width: 60px; height: 60px;
+            background: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            z-index: 999;
+            box-shadow: 0 8px 25px rgba(37,211,102,.5);
+            transition: transform .35s ease, box-shadow .35s ease;
+            animation: waPulse 2.4s infinite;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.12) rotate(8deg);
+            color: #fff;
+            box-shadow: 0 14px 40px rgba(37,211,102,.75);
+        }
+        @keyframes waPulse {
+            0%,100% { box-shadow: 0 8px 25px rgba(37,211,102,.5); }
+            50% { box-shadow: 0 8px 40px rgba(37,211,102,1); }
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 100px; right: 30px;
+            width: 46px; height: 46px;
+            background: var(--gradient-gold);
+            color: var(--emerald-900);
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 998;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .45s ease;
+            box-shadow: var(--shadow-gold);
+        }
+        #backToTop.show { opacity: 1; visibility: visible; }
+        #backToTop:hover {
+            transform: translateY(-5px) scale(1.08);
+            box-shadow: 0 15px 35px rgba(201,161,92,.6);
+        }
+
+        /* ============================================================
+           RESPONSIVE
+           ============================================================ */
+        @media (max-width: 768px) {
+            .slider_area .single_slider { background-attachment: scroll; min-height: 620px; }
+            .team_thumb_img { height: 340px; }
+            .whatsapp-float { width: 52px; height: 52px; font-size: 26px; bottom: 20px; right: 20px; }
+            #backToTop { bottom: 85px; right: 22px; }
+            .single_service, .animal_card { border-radius: 20px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">El Campo</div>
+    </div>
+
+    <div id="scroll-progress"></div>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="header-area">
+            <div class="header-top_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-8">
+                            <div class="short_contact_list">
+                                <ul>
+                                    <li><a href="tel:+50497460615"><i class="fa fa-phone"></i> +504 9746-0615</a></li>
+                                    <li><a href="#contacto"><i class="fa fa-map-marker"></i> Santa Cruz de Yojoa, Cortés</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4">
+                            <div class="social_media_links">
+                                <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="logoo.jpeg" alt="Logo Veterinaria El Campo" style="max-height:80px;width:auto;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="main-menu d-none d-lg-block">
+                                <nav aria-label="Navegación principal">
+                                    <ul id="navigation">
+                                        <li><a href="#inicio">Inicio</a></li>
+                                        <li><a href="#nosotros">Nosotros</a></li>
+                                        <li><a href="#servicios">Servicios</a></li>
+                                        <li><a href="#animales">Animales</a></li>
+                                        <li><a href="#equipo">Especialista</a></li>
+                                        <li><a href="#contacto">Contacto</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="slider_area" id="inicio">
+        <div class="single_slider d-flex align-items-center"
+             style="background-image:url('https://i.pinimg.com/736x/03/63/60/036360f17c16d2f9d8bc72e5dad112b4.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="slider_text">
+                            <div class="hero-divider" data-aos="fade-right" data-aos-duration="900"></div>
+                            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                                Cuidado y Salud Especializada para
+                                <br>
+                                <span>Animales de Granja</span>
+                            </h1>
+                            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+                                Asistencia veterinaria en campo, medicina ganadera, planes de vacunación, reproducción y control sanitario para la productividad de tu finca.
+                            </p>
+                            <a href="#contacto" class="boxed-btn4"
+                               data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                                Solicitar Visita a Finca
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="service_area ambient_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-10">
+                    <div class="section_title text-center mb-5"
+                         data-aos="fade-up" data-aos-duration="900">
+                        <h2>Servicios Veterinarios Pecuarios</h2>
+                        <p>Atención médica especializada directamente en el campo para la salud, bienestar y rendimiento productivo de tus animales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="0">
+                    <article class="single_service">
+                        <div class="service_thumb">
+                            <img src="https://th.bing.com/th/id/OIP.sOLU0iZhe7HHaUjDId9_4AHaE8?w=256&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Medicina Bovina y Clínica de Campo" class="img-cover-farm" loading="lazy">
+                        </div>
+                        <div class="service_content">
+                            <h3>Medicina Bovina y Campo</h3>
+                            <p>Diagnóstico clínico, cirugías a campo, tratamiento de enfermedades infecciosas y metabólicas en ganado de carne y leche.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="150">
+                    <article class="single_service">
+                        <div class="service_thumb">
+                            <img src="https://th.bing.com/th/id/OIP.9eOq5nfX5OeO0JQEYSmDmgHaEK?w=285&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Reproducción y Sanidad Pecuaria" class="img-cover-farm" loading="lazy">
+                        </div>
+                        <div class="service_content">
+                            <h3>Reproducción y Biotecnología</h3>
+                            <p>Inseminación artificial, diagnóstico de gestación por ultrasonografía, atención de partos difíciles y manejo reproductivo.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <article class="single_service">
+                        <div class="service_thumb">
+                            <img src="https://th.bing.com/th/id/OIP.QnV55kk37UcF4OE3LkW1vQHaE8?w=238&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Bioseguridad y Planes Sanitarios" class="img-cover-farm" loading="lazy">
+                        </div>
+                        <div class="service_content">
+                            <h3>Planes Sanitarios y Bioseguridad</h3>
+                            <p>Diseño de programas de vacunación, desparasitación estratégica, bioseguridad en granja y control de mastitis.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANIMALES -->
+    <section id="animales" class="farm_animals_section ambient_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="section_title text-center mb-5" data-aos="fade-up">
+                        <h2>Especies Atendidas</h2>
+                        <p>Atención médica y asesoramiento técnico especializado adaptado a las necesidades de cada sistema de producción.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <article class="animal_card">
+                        <div class="animal_img_wrapper">
+                            <img src="https://th.bing.com/th/id/OIP.j0p3-aGWLbonxiNW8U3aeAHaEI?w=277&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Ganado Bovino" loading="lazy">
+                            <span class="animal_badge">Bovinos</span>
+                        </div>
+                        <div class="animal_content">
+                            <h3>Ganado Bovino (Leche y Carne)</h3>
+                            <p>Control mastítico, podología bovina, diagnóstico reproductivo, manejo de terneros y programas de nutrición preventiva.</p>
+                            <div class="animal_meta">
+                                <span><i class="fa fa-stethoscope"></i> Medicina de hato</span>
+                                <span>Visitas programadas</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <article class="animal_card">
+                        <div class="animal_img_wrapper">
+                            <img src="https://th.bing.com/th/id/OIP.yebPIpya9rKvw3fKYzBYsAHaFi?w=221&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Equinos de trabajo y deporte" loading="lazy">
+                            <span class="animal_badge">Equinos</span>
+                        </div>
+                        <div class="animal_content">
+                            <h3>Caballos de Trabajo y Deporte</h3>
+                            <p>Odontología equina, atención de cólicos, medicina deportiva, desparasitación e identificación sanitaria para traslado.</p>
+                            <div class="animal_meta">
+                                <span><i class="fa fa-medkit"></i> Urgencias y Cuidado</span>
+                                <span>Atención directa</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <article class="animal_card">
+                        <div class="animal_img_wrapper">
+                            <img src="https://th.bing.com/th/id/OIP.O5mL5RiNzBkuci_5yL--awHaEO?w=274&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Porcinos" loading="lazy">
+                            <span class="animal_badge">Porcinos</span>
+                        </div>
+                        <div class="animal_content">
+                            <h3>Porcicultura y Granja Porcina</h3>
+                            <p>Control respiratorio y digestivo, asesoría reproductiva en cerdas, asistencia al parto y protocolos de bioseguridad.</p>
+                            <div class="animal_meta">
+                                <span><i class="fa fa-shield"></i> Bioseguridad</span>
+                                <span>Asesoría técnica</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <article class="animal_card">
+                        <div class="animal_img_wrapper">
+                            <img src="https://th.bing.com/th/id/OIP.gx73qNHtq-hSs817rGsG4gHaFj?w=237&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Ovinos y Caprinos" loading="lazy">
+                            <span class="animal_badge">Ovejas y Cabras</span>
+                        </div>
+                        <div class="animal_content">
+                            <h3>Ovinos y Caprinos</h3>
+                            <p>Manejo de parásitos gastrointestinales (Famacha), podología, prevención de enterotoxemias y nutrición en pequeños rumiantes.</p>
+                            <div class="animal_meta">
+                                <span><i class="fa fa-heartbeat"></i> Sanidad de hato</span>
+                                <span>Evaluación Famacha</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <article class="animal_card">
+                        <div class="animal_img_wrapper">
+                            <img src="https://th.bing.com/th/id/OIP.IOhHPr44D6FZ9I-gdLovYwHaEz?w=259&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Aves de postura y engorde" loading="lazy">
+                            <span class="animal_badge">Avicultura</span>
+                        </div>
+                        <div class="animal_content">
+                            <h3>Aves de Postura y Engorde</h3>
+                            <p>Planes vacunales, diagnóstico avícola, control de parásitos y recomendaciones para optimizar la conversión alimenticia.</p>
+                            <div class="animal_meta">
+                                <span><i class="fa fa-leaf"></i> Nutrición y Sanidad</span>
+                                <span>Lotes y granjas</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="pet_care_area ambient_section" id="nosotros">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6" data-aos="fade-right">
+                    <div class="pet_thumb">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.OO8g_KSMj-VOUE-2fKCJEQHaE8?r=0&pid=ImgDet&w=182&h=121&c=7&o=7&rm=3" alt="Atención médica e inspección en finca" class="img-cover-farm" style="height:420px;border-radius:24px;" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1 col-md-6" data-aos="fade-left" data-aos-delay="150">
+                    <div class="pet_info">
+                        <div class="section_title">
+                            <h2>Compromiso con la Productividad de tu Finca y Ganado</h2>
+                            <p>Combinamos medicina veterinaria actualizada, tecnología diagnóstica en campo y asesoramiento constante para que tus animales se mantengan sanos y tu producción sea rentable.</p>
+                            <a href="#contacto" class="boxed-btn3 mt-3">Solicitar Diagnóstico</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section class="adapt_area">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="adapt_help">
+                        <div class="section_title">
+                            <h2>Pasión por el Trabajo de Campo</h2>
+                            <p>Atención directa en tu propiedad para responder rápidamente ante emergencias y planificar la salud de todo tu inventario animal.</p>
+                            <a href="#contacto" class="boxed-btn3 mt-3">Contactar al Médico Veterinario</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="150">
+                    <div class="adapt_about">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single_adapt text-center">
+                                    <div class="adapt_content">
+                                        <span class="counter-num" data-target="150">0</span>
+                                        <p class="counter-label">Visitas a Finca</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single_adapt text-center">
+                                    <div class="adapt_content">
+                                        <span class="counter-num" data-target="500">0</span>
+                                        <p class="counter-label">Animales Atendidos</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt-3">
+                                <div class="single_adapt text-center">
+                                    <div class="adapt_content">
+                                        <h3><i class="fa fa-check-circle"></i></h3>
+                                        <p>Planes Sanitarios Personalizados</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section id="equipo" class="team_area ambient_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-10">
+                    <div class="section_title text-center mb-5" data-aos="fade-up">
+                        <h2>Médico Veterinario Especialista</h2>
+                        <p>Atención profesional y dedicada a la salud animal en el sector agropecuario.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1200">
+                    <article class="single_team">
+                        <div class="thumb mb-3">
+                            <img src="dr.jpeg" alt="Dr. Edan Galeano - Médico Veterinario" class="team_thumb_img" loading="lazy">
+                        </div>
+                        <div class="member_name text-center">
+                            <div class="mamber_inner">
+                                <h3>Dr. Edan Galeano</h3>
+                                <p>Médico Veterinario Pecuario</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="footer">
+        <div class="footer_top section_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-lg-3" data-aos="fade-up">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">Contacto Directo</h3>
+                            <ul class="address_line">
+                                <li><a href="tel:+50497460615"><i class="fa fa-phone"></i> +504 9746-0615</a></li>
+                                <li><a href="mailto:edangaleano3@gmail.com"><i class="fa fa-envelope"></i> edangaleano3@gmail.com</a></li>
+                                <li><i class="fa fa-map-marker"></i> Santa Cruz de Yojoa, Cortés, B. La Gloria, Honduras</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">Servicios Pecuarios</h3>
+                            <ul class="links">
+                                <li><a href="#servicios">Medicina Bovina y Finca</a></li>
+                                <li><a href="#servicios">Inseminación y Reproducción</a></li>
+                                <li><a href="#animales">Atención a Equinos y Porcinos</a></li>
+                                <li><a href="#servicios">Programas de Vacunación</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">Navegación</h3>
+                            <ul class="links">
+                                <li><a href="#inicio">Inicio</a></li>
+                                <li><a href="#animales">Especies</a></li>
+                                <li><a href="#equipo">Especialista</a></li>
+                                <li><a href="#contacto">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="#inicio">
+                                    <img src="logoo.jpeg" alt="Logo Veterinaria El Campo" style="max-height:180px;width:auto;">
+                                </a>
+                            </div>
+                            <p class="address_text mt-3">Veterinaria El Campo — Salud, Sanidad y Rendimiento Pecuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            Copyright &copy; <span id="current-year"></span> Veterinaria El Campo. Todos los derechos reservados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/50497460615?text=Hola%20Dr.%20Edan,%20necesito%20asistencia%20veterinaria%20para%20mi%20finca"
+       class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+
+    <button id="backToTop" aria-label="Volver arriba">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- SCRIPTS -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+
+        window.addEventListener('load', () => {
+            setTimeout(() => document.getElementById('loader').classList.add('hidden'), 700);
+        });
+
+        AOS.init({
+            duration: 950,
+            once: true,
+            offset: 90,
+            easing: 'ease-out-cubic'
+        });
+
+        const progressBar = document.getElementById('scroll-progress');
+        const header = document.querySelector('.main-header-area');
+        const backBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (scrollTop / docHeight) * 100;
+            progressBar.style.width = progress + '%';
+
+            if (scrollTop > 60) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+
+            if (scrollTop > 400) backBtn.classList.add('show');
+            else backBtn.classList.remove('show');
+        });
+
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Contadores
+        const counters = document.querySelectorAll('.counter-num');
+        const animateCounter = (el) => {
+            const target = +el.dataset.target;
+            let count = 0;
+            const step = target / 70;
+            const update = () => {
+                count += step;
+                if (count < target) {
+                    el.textContent = Math.floor(count) + '+';
+                    requestAnimationFrame(update);
+                } else {
+                    el.textContent = target + '+';
+                }
+            };
+            update();
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.4 });
+        counters.forEach(c => observer.observe(c));
+
+        // Parallax hero
+        const hero = document.querySelector('.single_slider');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY < window.innerHeight) {
+                hero.style.backgroundPositionY = (window.scrollY * 0.35) + 'px';
+            }
+        });
+
+        if (typeof WOW !== "undefined") {
+            new WOW({ boxClass: "wow", animateClass: "animated", offset: 40, mobile: true, live: true }).init();
+        }
+    </script>
+
+</body>
+</html>
